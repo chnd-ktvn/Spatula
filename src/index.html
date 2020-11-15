@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Spatula</title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar-fixed">
+                <nav class="orange darken-2">
+                    <div class="container">
+                        <div class="nav-wrapper">
+                            <a href="#home" class="brand-logo center">Spatula</a>
+                            <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        </div>
+                   </div>
+                </nav>
+            </div>
+            <ul class="sidenav" id="mobile-menu">
+                <li><a href="#home">Home</a></li>
+                <li><div class="divider orange darken-3"></div></li> 
+                <li><a href="#search">Search</a></li>
+                <li><div class="divider orange darken-3"></div></li> 
+                <li><a href="#random-recipes">Random Recipes</a></li>
+                <li><div class="divider orange darken-3"></div></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </header>
+
+        <main>
+            <article>
+                <section id="home" class="home scrollspy">
+                    <div class="slider">
+                        <ul class="slides">
+                            <li>
+                                <img src="./img/1.jpg">
+                                <div class="caption left-align">
+                                    <h3 class="light black-text text-lighten-4">Welcome to <span class="orange-text text-lighten-3"><i>Spatula!</i></span></h2>
+                                    <h5 class="light grey-text text-lighten-4">What do you want to cook for today?</h5>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/2.jpg">
+                                <div class="caption center-align">
+                                    <h4 class="light grey-text text-lighten-4">Now, you can search by <span class="orange-text text-lighten-3"><i>ingredients</i></span>.</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/3.jpg">
+                                <div class="caption right-align">
+                                    <h4 class="light grey-text text-lighten-4">Or you can get <span class="orange-text text-lighten-3"><i>Random recipes</i></span>.</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/4.jpg">
+                                <div class="caption right-align">
+                                    <h4 class="light grey-text text-lighten-4">Have a <span class="orange-text text-lighten-3">nice cooking! </span>:)</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+
+            <article class="row">
+                <div class="col s12 m9 l10">
+                    <section class="show light grey lighten-3 scrollspy" id="search">
+                        <div class="container">
+                            <div class="row">
+                                <h4 class="light grey-text text-darken-3 center">Search</h4>
+                                    <div class="col s12">
+                                        <div class="row">
+                                            <div class="input-field orange-text text-darken-2 center">
+                                                <div class="col s10">
+                                                    <i class="material-icons prefix">search</i>
+                                                    <input type="text" id="search-bar">
+                                                </div>
+                                                <div class="col s2">
+                                                    <button class="waves-effect waves-light btn-small orange darken-2" type="button" id="button-search">Search</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col m6 s12">
+                                        <div class="card-panel light grey-text text-darken-3 center">
+                                            <i class="medium material-icons orange-text text-darken-2">kitchen</i>
+                                            <h5>By Ingredients</h5>
+                                            <p>eg: apples,flour,sugar</p>
+                                        </div>
+                                    </div>
+                                    <div class="col m6 s12">
+                                        <div class="card-panel light grey-text text-darken-3 center">
+                                            <i class="medium material-icons orange-text text-darken-2">local_pizza</i>
+                                            <h5>By Simple Food</h5>
+                                            <p>eg: pizza</p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="row" id="search-recipe"></div>
+                    </section>
+                    <section class="show light orange lighten-4 scrollspy" id="random-recipes">
+                        <h4 class="light black-text text-darken-3 center">Random Recipes</h4>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="card-panel light black-text text-darken-3 waves-effect waves-block waves-orange center" id="getRandR">
+                                        <i class="medium material-icons grey-text text-darken-2">local_library</i>
+                                        <h5>Here's some recipes you should try!</h5>
+                                        <p><i><b>Click this card to get the recipes.<b></b></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <rand-recipes></rand-recipes>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="show white scrollspy" id="about">
+                        <h4 class="light grey-text text-darken-3 center">About</h4>
+                        <div class="container">
+                            <div class="row">
+                                <div class="card-panel col m4 s12 center">
+                                    <i class="large light material-icons orange-text text-darken-2">email</i>
+                                    <h6>Do you have any suggestions or questions?</h6>
+                                </div>
+                                <div class="col m8 s12">
+                                    <ul class="collection with-header">
+                                        <li class="collection-header"><h6>Please contact me at: </h6></li>
+                                        <li class="collection-item grey-text text-darken-1 bio">Chandra Oktaviani</h6></li>
+                                        <li class="collection-item grey-text text-darken-1 bio"><a href="https://www.linkedin.com/in/chandra-oktaviani-72681b1bb/" target="_blank">https://www.linkedin.com/in/chandra-oktaviani-72681b1bb/</a></li>
+                                    </ul>
+                                </div>        
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                
+                <aside class="bold col hide-on-small-only m3 l2">
+                    <ul class="section table-of-contents coba">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#search">Search</a></li>
+                        <li><a href="#random-recipes">Random Recipes</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </aside>
+            </article>
+        </main>
+        
+        <footer class="light orange darken-2 white-text center">
+            <p>Copyright &#169; 2020.Spatula.com.All Rights Reserved</p>
+        </footer>
+    </body>
+</html>
